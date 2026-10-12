@@ -1,0 +1,111 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#03040a">
+  <meta name="description" content="A futuristic neon login form UI by WebLab Studio.">
+  <title>Login to WebLab Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-card">
+
+    <section class="login-content" aria-labelledby="login-heading">
+      <h1 class="form-heading" id="login-heading">LOGIN</h1>
+
+      <form id="login-form">
+        <div class="input-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            autocomplete="email"
+            aria-label="Email address"
+            required
+          >
+        </div>
+
+        <div class="input-group password-input">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            autocomplete="current-password"
+            aria-label="Password"
+            required
+          >
+
+          <button
+            type="button"
+            class="toggle-password"
+            id="toggle-password"
+            aria-label="Show password"
+            aria-controls="password"
+            aria-pressed="false"
+          >
+            <svg id="eye-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+          </button>
+        </div>
+
+        <button type="submit" class="login-btn">
+          <span>LOG IN</span>
+        </button>
+
+        <p class="form-message" id="form-message"
+           role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="social-content" aria-label="Other sign-in options">
+      <p class="social-title">or login with</p>
+
+      <div class="social-options">
+        <button class="social-btn" type="button"
+                data-provider="Google"
+                aria-label="Continue with Google">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.09-1.92 3.28-4.74 3.28-8.09Z"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23Z"/>
+            <path d="M5.84 14.09A6.6 6.6 0 0 1 5.5 12a6.6 6.6 0 0 1 .34-2.09V7.06H2.18A11 11 0 0 0 1 12a11 11 0 0 0 1.18 4.94l3.66-2.85Z"/>
+            <path d="M12 5.38a6 6 0 0 1 4.23 1.65l3.17-3.17A10.59 10.59 0 0 0 12 1 11 11 0 0 0 2.18 7.06l3.66 2.85C6.71 7.31 9.14 5.38 12 5.38Z"/>
+          </svg>
+          <span>Google</span>
+        </button>
+
+        <button class="social-btn" type="button"
+                data-provider="Apple"
+                aria-label="Continue with Apple">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 22c-1.31 0-1.72-.8-3.22-.8s-2 .78-3.23.83c-1.34.05-2.31-1.31-3.15-2.52C4.36 17 3.05 12.38 4.78 9.39c.86-1.49 2.4-2.43 4.08-2.46 1.27 0 2.47.88 3.25.88s2.21-1.07 3.72-.92a5.18 5.18 0 0 1 4.05 2.28 5.06 5.06 0 0 0-2.43 4.24 5.13 5.13 0 0 0 3.13 4.68 11.39 11.39 0 0 1-1.87 1.41ZM15.91 4.71a4.93 4.93 0 0 0 1.13-3.55 5.12 5.12 0 0 0-3.32 1.7 4.74 4.74 0 0 0-1.18 3.43 4.39 4.39 0 0 0 2.19-1.58Z"/>
+          </svg>
+          <span>Apple</span>
+        </button>
+
+        <button class="social-btn" type="button"
+                data-provider="Facebook"
+                aria-label="Continue with Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12Z"/>
+          </svg>
+          <span>Facebook</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <p class="register-text">
+    Don't have an account?
+    <a href="#" id="register-link">Register</a>
+  </p>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
